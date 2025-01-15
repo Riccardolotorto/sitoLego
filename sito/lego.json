@@ -1,0 +1,29 @@
+
+{
+    "products": [
+    {
+        "title": "Clone Carrier",
+        "name": "Jagger",
+        "age": 20,
+        "year": 2023,
+        "img": "1.png",
+        "id": "clone"
+    },
+    {
+        "title": "Star Craft",
+        "name": "Muhammad Abdullah Lampa",
+        "age": 13,
+        "year": 2023,
+        "img": "2.png",
+        "id": "star"
+    },
+    {
+        "title": "Hellitrain",
+        "name": "Atharva",
+        "age": 9,
+        "year": 2023,
+        "img": "3.png",
+        "id": "Helli"
+    }
+    ]
+}

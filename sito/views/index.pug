@@ -1,0 +1,15 @@
+doctype html
+html
+ head
+    title #{title}
+    link(rel='stylesheet', href='/css/style.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+ body
+    header.header
+        h1 #{title}
+    article.container #{content}
+    each product in lego 
+        div
+            img(src=`/images/${product.img}`, alt="")
+            h2 #{product.name}
+            a(href=`/istruzioni?id=${product.id}`) View Instructions
