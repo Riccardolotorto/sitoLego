@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/style.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    header.header
+      h1 #{title}
+
+    article.container
+      div.instruction
+        div.instruction-image
+          img(src=`/images/${product.img}`, alt=`${product.title}`)
+        div.instruction-details
+          h2 #{product.title}
+          p
+            strong Nome: 
+            | #{product.name}
+          p
+            strong Età raccomandata: 
+            | #{product.age}+
+          p
+            strong Anno: 
+            | #{product.year}
+          a.btn(href=product.imgIstruzioni, target="_blank") Visualizza le Istruzioni
+
+    footer.footer
+      p &copy; 2025 LEGO Instructions

@@ -7,6 +7,7 @@
         "age": 20,
         "year": 2023,
         "img": "1.png",
+        "imgIstruzioni": "https://letsbuilditagain.com/instructions/4651/002.jpg",
         "id": "clone"
     },
     {
@@ -15,6 +16,7 @@
         "age": 13,
         "year": 2023,
         "img": "2.png",
+        "imgIstruzioni": "https://letsbuilditagain.com/instructions/4652/004.jpg",
         "id": "star"
     },
     {
@@ -23,6 +25,7 @@
         "age": 9,
         "year": 2023,
         "img": "3.png",
+        "imgIstruzioni": "https://letsbuilditagain.com/instructions/4655/002.jpg",
         "id": "Helli"
     }
     ]

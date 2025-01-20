@@ -12,14 +12,15 @@ app.get('/', function (req, res) {
         }); //Dico a express di processare e inviare la pagina index.pug con due variabili (title e people)
 });
 
-app.get('/instructions', (req, res) => {
+app.get('/istruzioni', (req, res) => {
     const product = lego.products.find((p) => p.id === req.query.id);  //Viene individuata la persona con l’id specificato nell’url. Con req.query otterremo {name:"tom", age: "55"} 
     //find(p => p.id === req.query.id) Il controllo viene fatto su tutte le persone del vettore. Se una persona ha id uguale a quello specificato nell’url il metodo find restituisce la persona individuata
     res.render('istruzioni', {
-        title: `Title: ${product.title}`, //A questo punto renderizzeremo la pagina pug profile passando i dati che ci interessano (in questo caso il titolo e i dati sulla persona)
+        title: `Istruzioni LEGO: ${product.title}`, //A questo punto renderizzeremo la pagina pug profile passando i dati che ci interessano (in questo caso il titolo e i dati sulla persona)
         product,
     });
 });
+
 
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
